@@ -6,16 +6,231 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1440px;
-  height: auto;
-  position: relative;
+  width: 1500px;
+  margin: 0 auto;
 }
 
 .bl01 {
-  background-color: aqua;
+  width: 1500px;
+  max-width: 144000px;
+  height: 80px;
+  background-color: #685bc7;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.banana {
+  line-height: 70px;
+  position: absolute;
+  animation: running-animation 5s infinite linear;
+  white-space: nowrap;
+}
+@keyframes running-animation {
+  0% {
+    transform: translateZ(0);
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.bl02 {
+  width: 125px;
+  max-width: 125px;
+  height: 683px;
+  margin: 0 0 0 1375px;
+  background-color: #daff02;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: flex;
+  position: absolute;
+}
+.arrow_right {
+  line-height: 683px;
+  position: absolute;
+  animation: arrow1 3.5s linear infinite;
+  white-space: nowrap;
+}
+
+.bl03 {
+  background-color: #231686;
+  position: absolute;
+  width: 498px;
+  height: 182px;
+  border: 8px solid #daff02;
+}
+.snow {
+  position: absolute;
+  margin: 3px 0 0 0;
+  animation: snow2 1s ease-in-out infinite;
+}
+.snow1 {
+  position: absolute;
+  margin: 3px 0 0 165px;
+  animation: snow 1s ease-in-out infinite;
+}
+.snow2 {
+  position: absolute;
+  margin: 3px 0 0 330px;
+  animation: snow2 1s ease-in-out infinite;
+}
+
+.bl04 {
+  width: 505px;
+  height: 120px;
+  background-color: #231686;
+  margin: 0 0 0 498px;
+  position: absolute;
+}
+.robot_goleft {
+  margin: 0 0 0 70px;
+  position: absolute;
+}
+.door {
+  position: absolute;
+  animation: door1 2s ease-in-out infinite;
+}
+
+.bl05 {
+  width: 505px;
+  height: 63px;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 120px 0 2px 498px;
+}
+.bl06 {
+  width: 63px;
+  height: 505px;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 182px 0 0px 435px;
+}
+.bl07 {
+  width: 63px;
+  height: 505px;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 182px 0 0px 1003px;
+}
+.bl08 {
+  width: 505px;
+  height: 63px;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 688px 0 0px 498px;
+}
+
+.bl09 {
+  width: 505px;
+  height: 505px;
+  background-color: #fe572a;
+  position: absolute;
+  margin: 63px 0 0 498px;
+}
+/* .logo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: santa 2s linear infinite both;
+  animation-duration: 3s;
+  background-size: 100% 100%;
+} */
+
+.bl10 {
+  background-color: #231686;
+  width: 372px;
+  height: 182px;
+  position: absolute;
+  margin: 0 0 0 1003px;
+  border: 8px #fe572a solid;
+}
+
+.bl11 {
+  position: absolute;
+  width: 193px;
+  height: 683px;
+  background-color: #685bc7;
+  margin: 182px 0 0 1182px;
+}
+
+.star {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  margin: 70px 0 0 50px;
+  background-size: 100% 100%;
+  animation: snow_rot 3s ease-in-out infinite both;
+}
+.star1 {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  margin: 290px 0 0 50px;
+  background-size: 100% 100%;
+  animation: snow_rot 3s ease-in-out infinite both;
+}
+.star2 {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  margin: 500px 0 0 50px;
+  background-size: 100% 100%;
+  animation: snow_rot 3s ease-in-out infinite both;
+}
+
+.bl12 {
+  background-color: #fe572a;
+  position: absolute;
+  margin: 182px 0px 0 1065px;
+  width: 121px;
+  height: 505px;
+}
+.re {
+  animation: bounce 2s infinite;
+}
+
+.bl13 {
+  position: absolute;
+  background-color: #685bc7;
+  width: 125px;
+  height: 682px;
+  margin: 182px 0 0 0;
+  overflow: hidden;
+}
+.arrow_left {
+  line-height: 683px;
+  position: absolute;
+  animation: arrow2 3.5s linear infinite;
+  white-space: nowrap;
+}
+
+.bl14 {
+  position: absolute;
+  width: 505px;
+  margin: 750px 0 0 498px;
+  background-color: #231686;
+}
+.door1 {
+  position: absolute;
+  animation: door2 2s ease-in-out infinite;
+  margin: 0 900px 0 0;
+  width: 505px;
+}
+.robot_goright {
+  margin: 0 0 0 70px;
+  position: absolute;
+}
+
+.bl15 {
   width: 1440px;
-  height: 100px;
+  height: 80px;
+  position: absolute;
+  margin: 1360px 0 0 0;
+  background-color: #fe572a;
+  animation: arrow 5s infinite linear;
 }
