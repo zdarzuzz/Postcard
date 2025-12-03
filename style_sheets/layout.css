@@ -1,7 +1,21 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
-  width: 1440vw;
-  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  height: auto;
+  position: relative;
+}
+
+.bl01 {
+  background-color: aqua;
+  width: 1440px;
+  height: 100px;
 }
