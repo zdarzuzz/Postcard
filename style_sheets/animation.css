@@ -1,20 +1,40 @@
 @keyframes arrow1 {
   0% {
-    transform: translateZ(0);
+    transform: translateY(0);
   }
 
   100% {
-    transform: translate3d(0, -100%, 0);
+    transform: translateY(-100%);
   }
 }
 
 @keyframes arrow2 {
   0% {
-    transform: translateZ(0);
+    transform: translateY(100%);
   }
 
   100% {
-    transform: translate3d(0, 100%, 0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes arrow3 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes arrow4 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100%);
   }
 }
 @keyframes arrow {
@@ -95,21 +115,41 @@
   }
 }
 
-@keyframes santa {
+@keyframes logo {
   0% {
-    transform: translateY(110%);
+    transform: translateX(100%);
   }
   20% {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
   50% {
-    transform: translateY(0%);
+    transform: translateX(100%);
   }
   70% {
-    transform: translateY(110%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateY(110%);
+    transform: translateX(100%);
+  }
+}
+
+@keyframes advent {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  55% {
+    opacity: 5;
+  }
+  95% {
+    opacity: 5;
+  }
+  100% {
+    opacity: 5;
   }
 }
 
@@ -134,5 +174,84 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes running-animation1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes running-animation {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes matrix {
+  0% {
+    transform: matrix(0.7);
+  }
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(0);
+  }
+  50% {
+    transform: skewX(-25deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes jump1 {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes jump2 {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(-10px);
   }
 }

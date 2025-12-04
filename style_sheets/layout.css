@@ -6,40 +6,39 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  width: 1500px;
+  width: 37.5vw;
   margin: 0 auto;
 }
 
 .bl01 {
-  width: 1500px;
-  max-width: 144000px;
-  height: 80px;
+  width: 37.5vw;
+  height: 2vw;
   background-color: #685bc7;
   overflow: hidden;
   display: flex;
   position: relative;
 }
 .banana {
-  line-height: 70px;
+  line-height: 1.75vw;
   position: absolute;
   animation: running-animation 5s infinite linear;
   white-space: nowrap;
 }
-@keyframes running-animation {
-  0% {
-    transform: translateZ(0);
-  }
 
-  100% {
-    transform: translate3d(100%, 0, 0);
-  }
+#banana1 {
+  animation: running-animation1 5s infinite linear;
+}
+
+#banana2 {
+  animation: running-animation 5s infinite linear;
 }
 
 .bl02 {
-  width: 125px;
-  max-width: 125px;
-  height: 683px;
-  margin: 0 0 0 1375px;
+  width: 3.125vw;
+  max-width: 3.125vw;
+  height: 17.075vw;
+  z-index: 2;
+  margin: 0 0 0 34.375vw;
   background-color: #daff02;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -47,44 +46,50 @@ body {
   position: absolute;
 }
 .arrow_right {
-  line-height: 683px;
+  line-height: 17.075vw;
   position: absolute;
   animation: arrow1 3.5s linear infinite;
   white-space: nowrap;
 }
 
+#arrow1 {
+  animation: arrow1 3s linear infinite;
+}
+#arrow2 {
+  animation: arrow2 3s linear infinite;
+}
 .bl03 {
   background-color: #231686;
   position: absolute;
-  width: 498px;
-  height: 182px;
-  border: 8px solid #daff02;
+  width: 12.45vw;
+  height: 4.55vw;
+  border: 0.2vw solid #daff02;
 }
 .snow {
   position: absolute;
-  margin: 3px 0 0 0;
+  margin: 0.075vw 0 0 0;
   animation: snow2 1s ease-in-out infinite;
 }
 .snow1 {
   position: absolute;
-  margin: 3px 0 0 165px;
+  margin: 0.075vw 0 0 4.125vw;
   animation: snow 1s ease-in-out infinite;
 }
 .snow2 {
   position: absolute;
-  margin: 3px 0 0 330px;
+  margin: 0.075vw 0 0 8.25vw;
   animation: snow2 1s ease-in-out infinite;
 }
 
 .bl04 {
-  width: 505px;
-  height: 120px;
+  width: 12.625vw;
+  height: 3vw;
   background-color: #231686;
-  margin: 0 0 0 498px;
+  margin: 0 12.45vw;
   position: absolute;
 }
 .robot_goleft {
-  margin: 0 0 0 70px;
+  margin: 0 0 0 1.75vw;
   position: absolute;
 }
 .door {
@@ -93,92 +98,87 @@ body {
 }
 
 .bl05 {
-  width: 505px;
-  height: 63px;
+  width: 12.625vw;
+  height: 1.575vw;
   background-color: #daff02;
   animation: rotate-bg-color 2s infinite;
   position: absolute;
-  margin: 120px 0 2px 498px;
+  margin: 3vw 0 0 12.45vw;
 }
 .bl06 {
-  width: 63px;
-  height: 505px;
+  width: 1.575vw;
+  height: 12.625vw;
   background-color: #daff02;
   animation: rotate-bg-color 2s infinite;
   position: absolute;
-  margin: 182px 0 0px 435px;
+  margin: 4.55vw 0 0 10.875vw;
+  z-index: 2;
 }
 .bl07 {
-  width: 63px;
-  height: 505px;
+  width: 1.575vw;
+  height: 12.625vw;
   background-color: #daff02;
   animation: rotate-bg-color 2s infinite;
   position: absolute;
-  margin: 182px 0 0px 1003px;
+  margin: 4.55vw 0 0 25.075vw;
+  z-index: 2;
 }
 .bl08 {
-  width: 505px;
-  height: 63px;
+  width: 12.625vw;
+  height: 1.575vw;
   background-color: #daff02;
   animation: rotate-bg-color 2s infinite;
   position: absolute;
-  margin: 688px 0 0px 498px;
+  margin: 17.2vw 0 0 12.45vw;
 }
 
 .bl09 {
-  width: 505px;
-  height: 505px;
+  width: 12.625vw;
+  height: 12.625vw;
   background-color: #fe572a;
   position: absolute;
-  margin: 63px 0 0 498px;
+  margin: 4.575vw 0 0 12.45vw;
 }
-/* .logo {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  animation: santa 2s linear infinite both;
-  animation-duration: 3s;
-  background-size: 100% 100%;
-} */
 
 .bl10 {
   background-color: #231686;
-  width: 372px;
-  height: 182px;
+  width: 9.3vw;
+  height: 4.55vw;
   position: absolute;
-  margin: 0 0 0 1003px;
-  border: 8px #fe572a solid;
+  margin: 0 0 0 25.075vw;
+  border: 0.2vw #fe572a solid;
 }
 
 .bl11 {
   position: absolute;
-  width: 193px;
-  height: 683px;
+  width: 4.825vw;
+  height: 17.075vw;
+  z-index: 3;
   background-color: #685bc7;
-  margin: 182px 0 0 1182px;
+  margin: 4.55vw 0 0 29.59vw;
 }
 
 .star {
   position: absolute;
-  width: 100px;
+  width: 2.5vw;
   height: auto;
-  margin: 70px 0 0 50px;
+  margin: 1.75vw 0 0 1.25vw;
   background-size: 100% 100%;
   animation: snow_rot 3s ease-in-out infinite both;
 }
 .star1 {
   position: absolute;
-  width: 100px;
+  width: 2.5vw;
   height: auto;
-  margin: 290px 0 0 50px;
+  margin: 7.25vw 0 0 1.25vw;
   background-size: 100% 100%;
   animation: snow_rot 3s ease-in-out infinite both;
 }
 .star2 {
   position: absolute;
-  width: 100px;
+  width: 2.5vw;
   height: auto;
-  margin: 500px 0 0 50px;
+  margin: 12.5vw 0 0 1.25vw;
   background-size: 100% 100%;
   animation: snow_rot 3s ease-in-out infinite both;
 }
@@ -186,51 +186,220 @@ body {
 .bl12 {
   background-color: #fe572a;
   position: absolute;
-  margin: 182px 0px 0 1065px;
-  width: 121px;
-  height: 505px;
+  margin: 4.55vw 0 0 26.62vw;
+  width: 3.025vw;
+  height: 12.625vw;
+  z-index: 4;
 }
 .re {
   animation: bounce 2s infinite;
+  width: 2.8vw;
+  height: auto;
+  margin-left: 0.1vw;
 }
 
 .bl13 {
   position: absolute;
   background-color: #685bc7;
-  width: 125px;
-  height: 682px;
-  margin: 182px 0 0 0;
+  width: 3.125vw;
+  height: 17.05vw;
+  z-index: 2;
+  margin: 4.55vw 0 0 0;
   overflow: hidden;
 }
 .arrow_left {
-  line-height: 683px;
+  line-height: 17.075vw;
   position: absolute;
   animation: arrow2 3.5s linear infinite;
   white-space: nowrap;
 }
-
+#arrow3 {
+  animation: arrow3 3s linear infinite;
+}
+#arrow4 {
+  animation: arrow4 3s linear infinite;
+}
 .bl14 {
-  position: absolute;
-  width: 505px;
-  margin: 750px 0 0 498px;
   background-color: #231686;
+  position: absolute;
+  width: 12.625vw;
+  height: 3.025vw;
+  margin: 18.75vw 0 0 12.45vw;
 }
 .door1 {
   position: absolute;
   animation: door2 2s ease-in-out infinite;
-  margin: 0 900px 0 0;
-  width: 505px;
+  margin: 0 22.5vw 0 0;
+  width: 12.625vw;
 }
 .robot_goright {
-  margin: 0 0 0 70px;
+  margin: 0 0 0 1.75vw;
   position: absolute;
 }
 
 .bl15 {
-  width: 1440px;
-  height: 80px;
+  width: 37.5vw;
+  height: 2vw;
   position: absolute;
-  margin: 1360px 0 0 0;
+  margin: 21.55vw 0 0 0;
+  overflow: hidden;
+  z-index: 3;
   background-color: #fe572a;
-  animation: arrow 5s infinite linear;
+}
+.banana1 {
+  line-height: 1.75vw;
+  position: absolute;
+  animation: running-animation1 5s infinite linear;
+  white-space: nowrap;
+}
+
+.bl16 {
+  position: absolute;
+  overflow: hidden;
+  background-color: #daff02;
+  width: 7.825vw;
+  height: 6.375vw;
+  z-index: 2;
+  margin: 4.55vw 0 0 3.125vw;
+  border: 0.2vw #fe572a solid;
+}
+
+.bl17 {
+  position: absolute;
+  overflow: hidden;
+  background-color: #685bc7;
+  width: 7.825vw;
+  height: 6.275vw;
+  z-index: 2;
+  margin: 10.925vw 0 0 3.125vw;
+}
+.surprize {
+  position: absolute;
+  margin: 0 0 0 0.75vw;
+  animation: scale 2s infinite linear;
+}
+
+.bl18 {
+  position: absolute;
+  overflow: hidden;
+  background-color: #231686;
+  border: 0.2vw #daff02 solid;
+  width: 3.15vw;
+  height: 4.55vw;
+  margin: 17.075vw 0 0 34.375vw;
+}
+.little_snow {
+  position: absolute;
+  width: 2.55vw;
+  height: 1.575vw;
+  margin: 0.25vw 0 0 0.125vw;
+  animation: snow 2s linear infinite;
+}
+.little_snow1 {
+  position: absolute;
+  width: 2.55vw;
+  height: 1.575vw;
+  margin: 2.25vw 0 0 0.125vw;
+  animation: snow 2s linear infinite;
+}
+
+.bl19 {
+  position: absolute;
+  background-color: #231686;
+  width: 4.575vw;
+  height: 4.575vw;
+  z-index: 3;
+  border: 0.2vw solid #fe572a;
+  margin: 17.125vw 0 0 25.073vw;
+}
+.berry {
+  padding: 0.075vw 0 0 0.425vw;
+  animation: skew 2s linear infinite;
+}
+
+.logo {
+  width: 11.75vw;
+  height: 11.75vw;
+  position: absolute;
+  animation: logo 10s linear infinite both;
+  animation-duration: 3s;
+  padding: 0.875vw 0 0 0.875vw;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+#text_full {
+  position: absolute;
+  margin: 1.75vw 0 0 0.5vw;
+  animation: advent 3s linear infinite both;
+}
+.text1 {
+  background-color: #fe572a;
+  position: absolute;
+  margin: 0.25vw 0 0 0.75vw;
+  text-align: center;
+  font-family: Defectica;
+  font-size: 2vw;
+  color: #daff02;
+  font-style: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+  /* animation: advent 2s linear infinite; */
+  z-index: 1;
+}
+.text {
+  background-color: #fe572a;
+  position: absolute;
+  margin: 5vw 0 0 0.25vw;
+  color: #daff02;
+  text-align: center;
+  font-family: Defectica;
+  font-size: 2vw;
+  font-style: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  z-index: 1;
+}
+
+.bl20 {
+  width: 9.375vw;
+  height: 4.375vw;
+  position: absolute;
+  border: 0.2vw solid #231686;
+  background-color: #daff02;
+  margin: 17.175vw 0 0 3.125vw;
+  z-index: 2;
+}
+.car {
+  position: absolute;
+  animation: logo 2s infinite linear;
+}
+
+.clock1 {
+  position: absolute;
+  width: 6.25vw;
+  height: auto;
+  margin: -0.25vw 0 0 0.625vw;
+}
+.clock2 {
+  position: absolute;
+  width: 6.25vw;
+  height: auto;
+  margin: -0.25vw 0 0 0.625vw;
+  animation: rotate 3s infinite;
+}
+
+.cookie1 {
+  width: 4vw;
+  height: auto;
+  position: absolute;
+  margin: 0.25vw 0 0 0.7vw;
+  animation: jump1 2s infinite;
+}
+.cookie2 {
+  width: 4vw;
+  height: auto;
+  position: absolute;
+  margin: 0.25vw 0 0 4.25vw;
+  animation: jump2 2s infinite;
 }
