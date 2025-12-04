@@ -1,28 +1,40 @@
-#all {
-  transform-origin: top center;
-  width: 100vw;
+/* Смартфоны (портрет) */
+@media (max-width: 767px) {
+  .bl01,
+  .bl15 {
+    height: 6rem;
+  }
 }
+
+/* Планшеты (портрет/альбом) */
+@media (max-width: 768px) and (max-width: 1023px) {
+  .bl01,
+  .bl15 {
+    height: 5rem;
+  }
+}
+
+/* Десктопы */
+@media (max-width: 1024px) {
+  .bl01 {
+    height: 3.2rem;
+  }
+  .banana {
+    line-height: 2.8rem;
+    height: 2.9rem;
+  }
+  .bl15 {
+    top: 34.5rem;
+  }
+}
+
+/* Очень большие экраны */
 @media (max-width: 1440px) {
-  #all {
-    transform: scale(0.9);
+  .bl01 {
+    height: 4rem;
   }
-}
-@media (max-width: 768px) {
-  #all {
-    transform: scale(0.6);
-  }
-
-  body {
-    padding-top: 20vw;
-  }
-}
-
-@media (max-width: 320px) {
-  #all {
-    transform: scale(0.38);
-  }
-
-  body {
-    padding-top: 50vw;
+  .banana {
+    line-height: 3.5rem;
+    height: 3.6rem;
   }
 }
