@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  width: 37.5vw;
+  width: 37%;
   margin: 0 auto;
 }
 
@@ -21,7 +21,26 @@ body {
 .banana {
   line-height: 1.75vw;
   position: absolute;
+  height: 1.8vw;
+  width: auto;
   animation: running-animation 5s infinite linear;
+  white-space: nowrap;
+}
+.bl15 {
+  width: 37.5vw;
+  height: 2vw;
+  position: absolute;
+  margin: 21.55vw 0 0 0;
+  overflow: hidden;
+  z-index: 3;
+  background-color: #fe572a;
+}
+.banana1 {
+  margin: 0.2vw 0 0 0;
+  line-height: 1.35vw;
+  position: absolute;
+
+  animation: running-animation1 5s infinite linear;
   white-space: nowrap;
 }
 
@@ -50,6 +69,8 @@ body {
   position: absolute;
   animation: arrow1 3.5s linear infinite;
   white-space: nowrap;
+  width: 3.1vw;
+  height: auto;
 }
 
 #arrow1 {
@@ -69,16 +90,22 @@ body {
   position: absolute;
   margin: 0.075vw 0 0 0;
   animation: snow2 1s ease-in-out infinite;
+  width: 4vw;
+  height: auto;
 }
 .snow1 {
   position: absolute;
   margin: 0.075vw 0 0 4.125vw;
   animation: snow 1s ease-in-out infinite;
+  width: 4vw;
+  height: auto;
 }
 .snow2 {
   position: absolute;
   margin: 0.075vw 0 0 8.25vw;
   animation: snow2 1s ease-in-out infinite;
+  width: 4vw;
+  height: auto;
 }
 
 .bl04 {
@@ -91,9 +118,13 @@ body {
 .robot_goleft {
   margin: 0 0 0 1.75vw;
   position: absolute;
+  width: 9.5vw;
+  height: auto;
 }
 .door {
   position: absolute;
+  height: 3vw;
+  width: auto;
   animation: door1 2s ease-in-out infinite;
 }
 
@@ -145,6 +176,7 @@ body {
   width: 9.3vw;
   height: 4.55vw;
   position: absolute;
+  overflow: hidden;
   margin: 0 0 0 25.075vw;
   border: 0.2vw #fe572a solid;
 }
@@ -189,6 +221,7 @@ body {
   margin: 4.55vw 0 0 26.62vw;
   width: 3.025vw;
   height: 12.625vw;
+  overflow: hidden;
   z-index: 4;
 }
 .re {
@@ -210,6 +243,8 @@ body {
 .arrow_left {
   line-height: 17.075vw;
   position: absolute;
+  width: 3.2vw;
+  height: auto;
   animation: arrow2 3.5s linear infinite;
   white-space: nowrap;
 }
@@ -233,24 +268,10 @@ body {
   width: 12.625vw;
 }
 .robot_goright {
-  margin: 0 0 0 1.75vw;
+  margin: 0 0 2vw 1.75vw;
   position: absolute;
-}
-
-.bl15 {
-  width: 37.5vw;
-  height: 2vw;
-  position: absolute;
-  margin: 21.55vw 0 0 0;
-  overflow: hidden;
-  z-index: 3;
-  background-color: #fe572a;
-}
-.banana1 {
-  line-height: 1.75vw;
-  position: absolute;
-  animation: running-animation1 5s infinite linear;
-  white-space: nowrap;
+  width: 9.5vw;
+  height: auto;
 }
 
 .bl16 {
@@ -275,7 +296,9 @@ body {
 }
 .surprize {
   position: absolute;
-  margin: 0 0 0 0.75vw;
+  margin: 0.3vw 0 0 0.75vw;
+  width: 6vw;
+  height: auto;
   animation: scale 2s infinite linear;
 }
 
@@ -309,12 +332,15 @@ body {
   width: 4.575vw;
   height: 4.575vw;
   z-index: 3;
+  overflow: hidden;
   border: 0.2vw solid #fe572a;
   margin: 17.125vw 0 0 25.073vw;
 }
 .berry {
-  padding: 0.075vw 0 0 0.425vw;
+  padding: 0.1vw 0 0 0.425vw;
   animation: skew 2s linear infinite;
+  width: 4vw;
+  height: auto;
 }
 
 .logo {
@@ -373,6 +399,8 @@ body {
 .car {
   position: absolute;
   animation: logo 2s infinite linear;
+  width: 4.5vw;
+  height: auto;
 }
 
 .clock1 {

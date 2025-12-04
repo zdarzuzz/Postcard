@@ -1,2 +1,28 @@
-@media screen and (max-width: 1440px) {
+#all {
+  transform-origin: top center;
+  width: 100vw;
+}
+@media (max-width: 1440px) {
+  #all {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 768px) {
+  #all {
+    transform: scale(0.6);
+  }
+
+  body {
+    padding-top: 20vw;
+  }
+}
+
+@media (max-width: 320px) {
+  #all {
+    transform: scale(0.38);
+  }
+
+  body {
+    padding-top: 50vw;
+  }
 }
